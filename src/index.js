@@ -5,6 +5,8 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuList from './components/MenuList/MenuList';
+import ItemDetails from './components/ItemDetails/ItemDetails';
+import About from './components/About/About';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -15,8 +17,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/" element={<MenuList />} />
-        {/* <Route path="about" element={<About />} /> */}
-        {/* <Route path="/details/:id" element={<ItemDetails />} /> */}
+        <Route path="about" element={<About />} />
+        <Route path="/details/:id" element={<ItemDetails />} />
       </Route>
     </Routes>
   </Router>

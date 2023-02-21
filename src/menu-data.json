@@ -14,5 +14,14 @@
     "for_diet":[],
     "allergens":[],
     "nutrition_info":["coming soon"]
+  },
+  {
+    "title":"Turkey Dinner",
+    "desc":"Roast turkey with mashed potatoes and vegetables",
+    "images":["stir-fry.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"]
   }
+
 ]

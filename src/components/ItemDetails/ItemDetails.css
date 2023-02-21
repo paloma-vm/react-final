@@ -1,0 +1,30 @@
+/* src/components/ItemDetails/ItemDetails.css */
+.ItemDetails {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 960px;
+	margin: auto;
+}
+
+.ItemDetails .ItemDetails-info {
+	flex: 1;
+	text-align: left;
+	padding: 0 1em;
+}
+
+.ItemDetails .ItemDetails-title {
+	font-size: 2em;
+	margin: 0;
+}
+
+.ItemDetails .ItemDetails-image {
+	flex: 2;
+}
+
+.ItemDetails .ItemDetails-image img {
+	width: 100%;
+}
+
+.ItemDetails .ItemDetails-hours {
+	font-size: 1.5em;
+}
