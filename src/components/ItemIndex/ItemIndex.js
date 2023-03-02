@@ -1,14 +1,14 @@
-// src/components/MenuList/MenuList.js
+// src/components/ItemIndex/ItemIndex.js
 import React from 'react';
 // import MenuItem from "../MenuItem/MenuItem"
 import MenuItem from '../MenuItem/MenuItem';
-import './MenuList.css';
+import './ItemIndex.css';
 
 import data from '../../menu-data.js'
 // import { useState } from 'react';
 
 
-function MenuList() {
+function ItemIndex() {
   const items = data
   .map((obj) => {
     const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
@@ -29,10 +29,10 @@ function MenuList() {
 
 
   return (
-    <div className="MenuList">
+    <div className="ItemIndex">
       {items}
     </div>
       
   )
 }
-  export default MenuList
+  export default ItemIndex

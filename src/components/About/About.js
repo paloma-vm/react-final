@@ -9,7 +9,7 @@ function About() {
       <p>
         Connected Care has a diverse menu that rotates every 4 weeks. 
         Every meal includes a variety of tasty ingredients.
-        The kitchen staff are always willing to take requests:
+        The kitchen staff are always willing to take requests.
         If you would like to see something on the menu, come talk to us!
       </p>
     </div>

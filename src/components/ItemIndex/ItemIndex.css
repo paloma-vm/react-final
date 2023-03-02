@@ -1,0 +1,47 @@
+ /* src/components/MenuList/MenuList.css */
+.MenuList {
+    /* width: calc(100% - 80px); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+  }
+
+/* Smaller screens and tablets */
+@media only screen and (max-width: 960px) {
+	.MenuList {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* Small screens mobile */
+@media only screen and (max-width: 700px) {
+	.MenuList {
+		grid-template-columns: 1fr;
+	}
+}
+
+.MenuList form {
+	display: flex;
+	align-items: flex-start;
+}
+
+.MenuList form input, .MenuList form button {
+	padding: 1em;
+	margin: 0;
+	border: 1px solid;
+	font-size: 1rem;
+}
+
+.MenuList form input {
+	flex: 1;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+.MenuList form button {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}

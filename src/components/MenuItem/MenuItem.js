@@ -4,7 +4,7 @@ import './MenuItem.css';
 import { Link } from 'react-router-dom';
 
 function MenuItem(props) {
-  const {name, image, ingredients, for_diets, nutrition_info, id} = props
+  const {name, image, ingredients, for_diets, nutrition_info, category, id} = props
   console.log(name)
   return (
     <div className='MenuItem'>
@@ -12,19 +12,18 @@ function MenuItem(props) {
         <img src={`${process.env.PUBLIC_URL}/images/${image}`}     
           width="300"
           height="300"
-          alt="Hello"
+          alt="Menu Item"
         />
       </Link>
       <h1>
         <Link
           className='MenuItem-title'
           to={`/details/${id}`}>
-          {name}
+          {category}
         </Link>
       </h1>
       <div className='MenuItem-info'>
-        {/* <div>{address}</div> */}
-        <div className='hours'>{for_diets}</div>
+        <div className='diets'>{for_diets}</div>
       </div>
     </div>
   )

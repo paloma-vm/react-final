@@ -5,7 +5,8 @@
     "images":["liver-onions.jpg"],
     "for_diet":[],
     "allergens":[],
-    "nutrition_info":["coming soon"]
+    "nutrition_info":["coming soon"],
+    "category": "main"
   },
   {
     "title":"Chicken Stir Fry",
@@ -13,7 +14,8 @@
     "images":["stir-fry.jpg"],
     "for_diet":[],
     "allergens":[],
-    "nutrition_info":["coming soon"]
+    "nutrition_info":["coming soon"],
+    "category": "main"
   },
   {
     "title":"Turkey Dinner",
@@ -21,7 +23,42 @@
     "images":["stir-fry.jpg"],
     "for_diet":[],
     "allergens":[],
-    "nutrition_info":["coming soon"]
+    "nutrition_info":["coming soon"],
+    "category": "main"
+  },
+  {
+    "title":"Macaroni and Cheese",
+    "desc":"Baked macaroni pasta with cheese",
+    "images":["stir-fry.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "main"
+  },  {
+    "title":"Chocolate Cake",
+    "desc":"Chocolate Cake",
+    "images":["stir-fry.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "dessert"
+  },  {
+    "title":"Jello",
+    "desc":"Jiggly gelatin dessert",
+    "images":["stir-fry.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "dessert"
+  },
+  {
+    "title":"Cookies",
+    "desc":"sanwich cookies",
+    "images":["stir-fry.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "snack"
   }
 
 ]
