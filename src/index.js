@@ -7,6 +7,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuList from './components/MenuList/MenuList';
 import ItemDetails from './components/ItemDetails/ItemDetails';
 import About from './components/About/About';
+import ItemIndex from './components/ItemIndex/ItemIndex';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

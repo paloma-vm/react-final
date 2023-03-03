@@ -15,16 +15,19 @@ function MenuItem(props) {
           alt="Menu Item"
         />
       </Link>
-      <h1>
-        <Link
-          className='MenuItem-title'
-          to={`/details/${id}`}>
-          {category}
-        </Link>
-      </h1>
-      <div className='MenuItem-info'>
-        <div className='diets'>{for_diets}</div>
+      <Link
+        className='MenuItem-title'
+        to={`/details/${id}`}>
+        {category}
+      </Link>
+  
+      <div className='dish-name'>
+        {name}
       </div>
+   
+      {/* <div className='MenuItem-info'>
+        <div className='diets'>{for_diets}</div>
+      </div> */}
     </div>
   )
 }

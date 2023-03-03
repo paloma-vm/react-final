@@ -5,10 +5,15 @@ import MenuItem from '../MenuItem/MenuItem';
 import './ItemIndex.css';
 
 import data from '../../menu-data.js'
-// import { useState } from 'react';
+import { useState } from 'react';
 
 
 function ItemIndex() {
+  const [menu, setMenu] = useState([]);
+  const addToMenu = (obj) => {
+    setMenu([...menu, obj])
+  }
+
   const items = data
   .map((obj) => {
     const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
@@ -22,14 +27,16 @@ function ItemIndex() {
         image={images[0]}
         category={category}
       />  
-      <h1>{title}</h1>  
+      <h1>{title}</h1>
+      <input type="submit" value="add" onClick = {() => addToMenu(obj)}/>
+  
     </div>
   )
 })
 
 
   return (
-    <div className="ItemIndex">
+    <div className="MenuList">
       {items}
     </div>
       

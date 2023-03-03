@@ -4,14 +4,23 @@ import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
 import './MenuList.css';
 
-import data from '../../menu-data.js'
-// import { useState } from 'react';
+// import data from '../../menu-data.js'
+import data from '../../todays-menu.js'
+// import AddToMenu from '../../../AddToMenu/AddToMenu';
+import { useState } from 'react';
+
 
 
 function MenuList() {
-  const items = data
+  const [menu, setMenu] = useState([]);
+  const addToMenu = (obj) => {
+    setMenu([...menu, obj])
+  }
+  // const useEffect(() => )
+  const todays_items = data
   .map((obj) => {
     const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
+    
   return (
     <div>
       
@@ -21,16 +30,33 @@ function MenuList() {
         name={title}
         image={images[0]}
         category={category}
+        
       />  
-      <h1>{title}</h1>  
+      <input type="submit" value="add" onClick = {() => addToMenu(obj)}/>
     </div>
   )
 })
+//   .map((obj) => {
+//     const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
+
+//   return (
+//     <div>
+      
+//       <MenuItem 
+//         id={id}
+//         key={`${title}-${id}`} // use id here
+//         name={title}
+//         image={images[0]}
+//         category={category}
+//       />  
+//     </div>
+//   )
+// })
 
 
   return (
     <div className="MenuList">
-      {items}
+      {todays_items}
     </div>
       
   )

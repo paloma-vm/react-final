@@ -6,8 +6,14 @@
     grid-gap: 2em;
     max-width: 1200px;
     margin: auto;
-    padding: 2em;
+    /* padding: 2em; */
   }
+
+h1 {
+	margin: 0.2em 0;
+	font-size: larger;
+	text-align: center;
+}
 
 /* Smaller screens and tablets */
 @media only screen and (max-width: 960px) {

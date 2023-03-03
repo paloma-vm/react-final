@@ -9,56 +9,49 @@
     "category": "main"
   },
   {
-    "title":"Chicken Stir Fry",
-    "desc":"Chicken and stir fried vegetables",
-    "images":["stir-fry.jpg"],
-    "for_diet":[],
-    "allergens":[],
-    "nutrition_info":["coming soon"],
-    "category": "main"
-  },
-  {
-    "title":"Turkey Dinner",
-    "desc":"Roast turkey with mashed potatoes and vegetables",
-    "images":["stir-fry.jpg"],
-    "for_diet":[],
-    "allergens":[],
-    "nutrition_info":["coming soon"],
-    "category": "main"
-  },
-  {
     "title":"Macaroni and Cheese",
     "desc":"Baked macaroni pasta with cheese",
-    "images":["stir-fry.jpg"],
+    "images":["macaroni.jpg"],
     "for_diet":[],
     "allergens":[],
     "nutrition_info":["coming soon"],
-    "category": "main"
-  },  {
-    "title":"Chocolate Cake",
-    "desc":"Chocolate Cake",
-    "images":["stir-fry.jpg"],
-    "for_diet":[],
-    "allergens":[],
-    "nutrition_info":["coming soon"],
-    "category": "dessert"
-  },  {
+    "category": "lunch"
+  },  
+  {
     "title":"Jello",
     "desc":"Jiggly gelatin dessert",
-    "images":["stir-fry.jpg"],
+    "images":["jello.png"],
     "for_diet":[],
     "allergens":[],
     "nutrition_info":["coming soon"],
     "category": "dessert"
   },
   {
-    "title":"Cookies",
+    "title":"Tomato Soup",
     "desc":"sanwich cookies",
-    "images":["stir-fry.jpg"],
+    "images":["soup.jpg"],
     "for_diet":[],
     "allergens":[],
     "nutrition_info":["coming soon"],
-    "category": "snack"
+    "category": "soup"
+  },
+  {
+    "title":"Milk",
+    "desc":"glass of milk",
+    "images":["milk.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "beverage"
+  },
+  {
+    "title":"Lunch",
+    "desc":"a yummy lunch",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "lunch"
   }
 
 ]

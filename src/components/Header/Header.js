@@ -13,13 +13,17 @@ function Header() {
         </div>
         <div className='Header-right'>
           <div className='a'>
-          <NavLink 
-                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/">List</NavLink>
-          <NavLink 
-                  className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                  to="/about">About</NavLink>
+            <NavLink 
+                    className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                    to="/"> Today's Menu</NavLink>
+            <NavLink 
+                    className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                    to="/all-items">All Menu Items</NavLink>
+            <NavLink 
+                    className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
+                    to="/about">About</NavLink>
           </div>
+          
         </div>
 
       </header>
