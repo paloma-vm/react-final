@@ -7,4 +7,4 @@ There are 'add to menu' buttons on each item, but I have not managed to get the 
 I am trying to add the items to a list and then render that list on the Today's Menu page.
 
 
-This could be connected to an API and the user could make visual menus.
+This could be connected to an API and the user could search for more items to add to the index to expand the menu choices.
