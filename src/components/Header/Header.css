@@ -42,6 +42,8 @@
 
   .Header-Subheader {
     color: rgba(255, 255, 255, 0.75);  
+    display: flex;
+    justify-content: start;
   }
 
   .Header a {

@@ -9,14 +9,23 @@ import { useState } from 'react';
 
 
 function ItemIndex() {
+  const [ query, setQuery ] = useState('')  
   const [menu, setMenu] = useState([]);
   const addToMenu = (obj) => {
     setMenu([...menu, obj])
-  }
-
+  } // add the item to the menu list
+  
   const items = data
+  .filter((obj) => {
+    // true if query is in title
+    const inTitle = obj.title.toLowerCase().includes(query.toLowerCase())
+    // true if query is in address
+    const inCategory = obj.category.toLowerCase().includes(query.toLowerCase())
+    // return true if either is true
+    return inTitle || inCategory
+  })
   .map((obj) => {
-    const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
+    const { id, title, images, ingredients, for_diets, nutrition_info, category, menu} = obj
   return (
     <div>
       
@@ -27,8 +36,7 @@ function ItemIndex() {
         image={images[0]}
         category={category}
       />  
-      <h1>{title}</h1>
-      <input type="submit" value="add" onClick = {() => addToMenu(obj)}/>
+      <input type="submit" value="Add to Menu" onClick = {() => addToMenu(obj)}/>
   
     </div>
   )
@@ -37,6 +45,14 @@ function ItemIndex() {
 
   return (
     <div className="MenuList">
+      	<form>
+				<input
+					value={query}
+					placeholder="search"
+					onChange={(e) => setQuery(e.target.value)}
+				/>
+				<button type="submit">Submit</button>
+			</form>
       {items}
     </div>
       

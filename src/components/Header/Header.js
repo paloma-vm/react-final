@@ -8,17 +8,17 @@ function Header() {
     <div className="Header">
       <header>
         <div className='Header-left'>
-          <h1>Today's Menu</h1>
-          <div className="Header-Subheader">Connected Care Daily Menu</div>
+          <h1>Connected Care Meals</h1>
+          <div className="Header-Subheader">Daily Menu and Meal Choices </div>
         </div>
         <div className='Header-right'>
           <div className='a'>
             <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                    to="/"> Today's Menu</NavLink>
+                    to="/today"> Today's Menu</NavLink>
             <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                    to="/all-items">All Menu Items</NavLink>
+                    to="/">All Menu Items</NavLink>
             <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
                     to="/about">About</NavLink>

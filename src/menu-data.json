@@ -45,13 +45,85 @@
     "category": "beverage"
   },
   {
-    "title":"Lunch",
+    "title":"Lunch Item",
     "desc":"a yummy lunch",
     "images":["plate.jpg"],
     "for_diet":[],
     "allergens":[],
     "nutrition_info":["coming soon"],
     "category": "lunch"
+  },
+  {
+    "title":"Lunch Item",
+    "desc":"a yummy lunch",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "lunch"
+  },
+  {
+    "title":"Lunch Item",
+    "desc":"a yummy lunch",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "lunch"
+  },
+  {
+    "title":"Breakfast Item",
+    "desc":"a yummy breakfast",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "breakfast"
+  },
+  {
+    "title":"Breakfast Item",
+    "desc":"a yummy breakfast",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "breakfast"
+  },
+  {
+    "title":"Main Item",
+    "desc":"a yummy main dish",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "main"
+  },
+  {
+    "title":"Main Item",
+    "desc":"a yummy main dish",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "main"
+  },
+  {
+    "title":"Main Item",
+    "desc":"a yummy main dish",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "main"
+  },
+  {
+    "title":"Dessert Item",
+    "desc":"a yummy dessert",
+    "images":["plate.jpg"],
+    "for_diet":[],
+    "allergens":[],
+    "nutrition_info":["coming soon"],
+    "category": "dessert"
   }
 
 ]

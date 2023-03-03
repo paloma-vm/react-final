@@ -17,12 +17,12 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<MenuList />} />
-        {/* <Route path="/today" element={<MenuList />} /> */}
+        <Route path="/" element={<ItemIndex />} />
+        <Route path="/today" element={<MenuList />} />
 
         <Route path="about" element={<About />} />
         <Route path="/details/:id" element={<ItemDetails />} />
-        <Route path="/all-items" element={<ItemIndex />} />
+        {/* <Route path="/all-items" element={<ItemIndex />} /> */}
       </Route>
     </Routes>
   </Router>

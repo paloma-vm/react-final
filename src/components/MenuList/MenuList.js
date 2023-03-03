@@ -4,20 +4,23 @@ import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
 import './MenuList.css';
 
-// import data from '../../menu-data.js'
-import data from '../../todays-menu.js'
+import data from '../../menu-data.js'
+// import data from '../../todays-menu.js'
 // import AddToMenu from '../../../AddToMenu/AddToMenu';
+import ItemIndex from '../ItemIndex/ItemIndex';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import menu from '../ItemIndex/ItemIndex';
 
 
 
 function MenuList() {
-  const [menu, setMenu] = useState([]);
-  const addToMenu = (obj) => {
-    setMenu([...menu, obj])
-  }
-  // const useEffect(() => )
-  const todays_items = data
+  // const [menu, setMenu] = useState([]);
+  // const addToMenu = (obj) => {
+  //   setMenu([...menu, obj])
+  // }
+
+  const todays_items = ItemIndex.menu
   .map((obj) => {
     const { id, title, images, ingredients, for_diets, nutrition_info, category} = obj
     
@@ -32,7 +35,6 @@ function MenuList() {
         category={category}
         
       />  
-      <input type="submit" value="add" onClick = {() => addToMenu(obj)}/>
     </div>
   )
 })
@@ -61,4 +63,4 @@ function MenuList() {
       
   )
 }
-  export default MenuList
+  export default MenuList;
